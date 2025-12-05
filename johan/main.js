@@ -1,5 +1,6 @@
 import { Store } from "./src/store.js";
 import { Product } from "./src/product.js";
+import { SingleProductView } from "./component/pSite.js";
 
 const mockText =
   "Emerio brödrost TO-123924 har 7 effektnivåer, en automatisk centreringsfunktion, uppvärmning, Defrost, en ställning och mer. Den är utmärkt för alla som gillar utsökt varmt och krispigt bröd.";
@@ -55,10 +56,10 @@ const setupEvent = (p, div) => {
     popUp.innerHTML = `
     <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="${p.image}" class="product-image" />
-      <div class="product-text">
-        <a class="product-name">${p.name}</a>
-        <div class="product-price">Pris:${p.price}</div>
+    <img src="${p.image}" class="modal-image" />
+      <div class="modal-text">
+        <a class="modal-name">${p.name}</a>
+        <div class="modal-price">Pris:${p.price}</div>
         <p>${p.description}</p>
       </div>
       </div>
@@ -66,8 +67,16 @@ const setupEvent = (p, div) => {
 
     document.body.appendChild(popUp);
     popUp.style.display = "block";
-    let link = document.querySelector(".product-name");
-    link.innerHTML += "href=product.html";
+
+    ////länka till singel Vy
+    let link = document.querySelector(".modal-name");
+    console.log(link);
+    /// skapa ny vy, skicka med specefik p(produkt)
+    link.addEventListener("click", (event) => {
+      let view = new SingleProductView(p);
+      popUp.remove();
+      view.renderView(p);
+    });
 
     popUp.querySelector(".close").addEventListener("click", () => {
       popUp.remove();
