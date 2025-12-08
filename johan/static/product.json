@@ -2,196 +2,196 @@
   {
     "name": "Brödrost",
     "price": 299,
-    "image": "./img/brödrost.png",
+    "image": "https://images.unsplash.com/photo-1584990347449-41e39192f49e?w=400",
     "description": "Elegant brödrost med 7 effektnivåer, automatisk centreringsfunktion och uppvärmning. Perfekt för alla som älskar krispigt rostat bröd varje morgon.",
     "category": "Kök"
   },
   {
     "name": "Spis",
     "price": 3499,
-    "image": "./img/spis.png",
+    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400",
     "description": "Modern elektrisk spis med 4 hällplattor och ugn. Energieffektiv och enkel att rengöra med släta ytor och digital display.",
     "category": "Kök"
   },
   {
     "name": "Mikrovågsugn",
     "price": 899,
-    "image": "./img/mikro.png",
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
     "description": "Kraftfull mikrovågsugn på 800W med 20 liters kapacitet. Flera förprogrammerade lägen för enkel matlagning.",
     "category": "Kök"
   },
   {
     "name": "Kaffebryggare",
     "price": 549,
-    "image": "./img/kaffe.png",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400",
     "description": "Automatisk kaffebryggare med timer och termos. Brygger upp till 12 koppar perfekt kaffe. Droppstoppfunktion ingår.",
     "category": "Kök"
   },
   {
     "name": "Mixer",
     "price": 449,
-    "image": "./img/mixer.png",
+    "image": "https://images.unsplash.com/photo-1578643463396-0997cb5328c1?w=400",
     "description": "Kraftfull handmixer med 5 hastighetsnivåer. Inkluderar vispar och degkrokar. Perfekt för bakning och matlagning.",
     "category": "Kök"
   },
   {
     "name": "Kylskåp",
     "price": 4999,
-    "image": "./img/kylskåp.png",
+    "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400",
     "description": "Rymligt kylskåp med frys på 300 liter. Energiklass A+++, frost-free teknologi och justerbara hyllor.",
     "category": "Kök"
   },
   {
     "name": "Diskmaskin",
     "price": 5499,
-    "image": "./img/diskmaskin.png",
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
     "description": "Tyst diskmaskin med plats för 12 kuvert. 6 olika program inklusive snabbprogram. Energieffektiv och vattenbesparande.",
     "category": "Kök"
   },
   {
-    "name": "Hårtork",
+    "name": "Skrivbordlampa LED",
     "price": 349,
-    "image": "./img/hårtork.png",
-    "description": "Professionell hårtork med jonteknologi för frissigt och glänsande hår. 3 värme- och 2 hastighetsinställningar. Inkluderar diffusor.",
-    "category": "Badrum"
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400",
+    "description": "Modern LED-skrivbordlampa med dimbar belysning och USB-laddningsport. Justerbar arm och minne för favoritinställningar.",
+    "category": "Hem"
   },
   {
-    "name": "Elektrisk Tandborste",
-    "price": 599,
-    "image": "./img/tandborste.png",
-    "description": "Avancerad elektrisk tandborste med ultraljudsteknik. 5 olika borstlägen och tryckindikator för optimal munhygien. Laddningsstation ingår.",
-    "category": "Badrum"
+    "name": "Väckarklocka Digital",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400",
+    "description": "Smart väckarklocka med LED-display, FM-radio och dubbla alarm. Inbyggd USB-laddare och nattläge.",
+    "category": "Hem"
   },
   {
-    "name": "Badrumsvåg",
-    "price": 249,
-    "image": "./img/våg.png",
-    "description": "Digital badrumsvåg i härdat glas. Mäter vikt, kroppsfett, muskelmassa och BMI. Ansluts till smartphone-app.",
-    "category": "Badrum"
-  },
-  {
-    "name": "Rakapparater",
-    "price": 799,
-    "image": "./img/rakapparat.png",
-    "description": "Vattentät rakapparater med roterande skärblad. Kan användas både torr och våt. 60 minuters sladdlös användning per laddning.",
-    "category": "Badrum"
-  },
-  {
-    "name": "Hårrätare",
-    "price": 449,
-    "image": "./img/hårrätare.png",
-    "description": "Keramisk hårrätare med temperaturreglering upp till 230°C. Snabb uppvärmning och automatisk avstängning för säkerhet.",
-    "category": "Badrum"
-  },
-  {
-    "name": "Elektrisk Rakhyvel",
+    "name": "Elradiator",
     "price": 899,
-    "image": "./img/rakhyvel.png",
-    "description": "Premium rakhyvel med självslipande blad och flexibla huvuden. Vattentät för användning i duschen. 90 minuters batteritid.",
-    "category": "Badrum"
+    "image": "https://images.unsplash.com/photo-1585740565969-f5d82c02c2a1?w=400",
+    "description": "Energisnål elradiator med termostat och timer. 3 effektnivåer och överhettningsskydd. Tyst och effektiv uppvärmning.",
+    "category": "Hem"
   },
   {
-    "name": "Massagedusch",
-    "price": 349,
-    "image": "./img/dusch.png",
-    "description": "Lyxig handdusch med 5 olika strålmönster och massage-funktion. Lätt att installera och vattenbesparande.",
-    "category": "Badrum"
+    "name": "Fläkt",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Tyst bordssfläkt med 3 hastigheter och oscillering. Energieffektiv och perfekt för sovrummet eller kontoret.",
+    "category": "Hem"
+  },
+  {
+    "name": "Vattenkokare",
+    "price": 449,
+    "image": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400",
+    "description": "Snabb vattenkokare i rostfritt stål med 1.7L kapacitet. Automatisk avstängning och kokskydd. 2200W effekt.",
+    "category": "Hem"
+  },
+  {
+    "name": "Luftfuktare",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
+    "description": "Ultraljuds luftfuktare med 4L tank. Tyst drift, nattljus och automatisk avstängning. Perfekt för torr inomhusluft.",
+    "category": "Hem"
+  },
+  {
+    "name": "Smarta Glödlampor",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1567513219894-0c9fe72e3b71?w=400",
+    "description": "WiFi-styrda LED-lampor med 16 miljoner färger. Styr via app eller röstassistent. Energieffektiv och lång livslängd.",
+    "category": "Hem"
   },
   {
     "name": "TV 55 tum",
     "price": 5499,
-    "image": "./img/tv.png",
+    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400",
     "description": "Smart TV med 4K Ultra HD upplösning och HDR. Inbyggda streaming-appar och röststyrning. Elegant design med smala ramar.",
     "category": "Elektronik"
   },
   {
     "name": "Hörlurar",
     "price": 1299,
-    "image": "./img/hörlurar.png",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
     "description": "Trådlösa hörlurar med aktiv brusreducering. Upp till 30 timmars batteritid och snabbladdning. Exceptionell ljudkvalitet.",
     "category": "Elektronik"
   },
   {
     "name": "Bluetooth-högtalare",
     "price": 699,
-    "image": "./img/högtalare.png",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400",
     "description": "Portabel vattentät Bluetooth-högtalare med kraftfullt ljud. 12 timmars speltid och inbyggd mikrofon för samtal.",
     "category": "Elektronik"
   },
   {
     "name": "Laptop",
     "price": 7999,
-    "image": "./img/laptop.png",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
     "description": "Kraftfull laptop med Intel i5 processor, 8GB RAM och 256GB SSD. 14 tums full HD-skärm och upp till 10 timmars batteritid.",
     "category": "Elektronik"
   },
   {
     "name": "Trådlös Mus",
     "price": 249,
-    "image": "./img/mus.png",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
     "description": "Ergonomisk trådlös mus med precision och tyst klick. Upp till 18 månaders batteritid. Fungerar på de flesta ytor.",
     "category": "Elektronik"
   },
   {
     "name": "Tangentbord",
     "price": 599,
-    "image": "./img/tangentbord.png",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
     "description": "Mekaniskt gaming-tangentbord med RGB-belysning. Anpassningsbara makrotangenter och hållbar konstruktion.",
     "category": "Elektronik"
   },
   {
     "name": "Webkamera",
     "price": 799,
-    "image": "./img/webkamera.png",
+    "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400",
     "description": "Full HD webkamera med autofokus och inbyggd mikrofon. Perfekt för videomöten och streaming. Enkel USB-anslutning.",
     "category": "Elektronik"
   },
   {
     "name": "Dammsugare",
     "price": 1899,
-    "image": "./img/dammsugare.png",
+    "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400",
     "description": "Påslös dammsugare med HEPA-filter. Stark sugkraft och extra lång elkabel på 10 meter. Perfekt för allergiker.",
     "category": "Städning"
   },
   {
     "name": "Robotdammsugare",
     "price": 3499,
-    "image": "./img/robotdammsugare.png",
+    "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400",
     "description": "Smart robotdammsugare med app-styrning och kartskapning. Automatisk återgång till laddningsstation. Fungerar på alla golv.",
     "category": "Städning"
   },
   {
     "name": "Ångtvätt",
     "price": 2299,
-    "image": "./img/ångtvätt.png",
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
     "description": "Multifunktionell ångtvätt för golv, fönster och textilier. Kemikaliefri rengöring med hetånga. Snabb uppvärmning.",
     "category": "Städning"
   },
   {
     "name": "Fönsterputsare",
     "price": 1199,
-    "image": "./img/fönsterputsare.png",
+    "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400",
     "description": "Elektrisk fönsterputsare med vakuumteknik. Ströfria resultat på fönster, speglar och kakel. Trådlös och lättanvänd.",
     "category": "Städning"
   },
   {
     "name": "Tvättmaskin",
     "price": 4999,
-    "image": "./img/tvättmaskin.png",
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
     "description": "Energieffektiv tvättmaskin med 8 kg kapacitet. 16 tvättprogram inklusive snabbprogram. Tyst drift och automatisk dosering.",
     "category": "Städning"
   },
   {
     "name": "Strykjärn",
     "price": 449,
-    "image": "./img/strykjärn.png",
+    "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400",
     "description": "Ångstrykjärn med keramisksula och kraftig ångstöt. Anti-kalk funktion och 2400W effekt. Självrenande system.",
     "category": "Städning"
   },
   {
     "name": "Luftrenare",
     "price": 1899,
-    "image": "./img/luftrenare.png",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
     "description": "HEPA luftrenare för rum upp till 50m². Tar bort pollen, damm och allergener. Tyst läge för nattbruk och smart sensor.",
     "category": "Städning"
   }
