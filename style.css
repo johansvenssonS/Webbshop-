@@ -33,11 +33,6 @@ header {
     margin-bottom: 15px;
 }
 
-/* appliceras på div:ar i #topHeader (istället för att använda class) */
-#topHeader div {
-    /*  border: solid; */
-}
-
 #logo {
     flex-grow: 7;
     font-size: 2rem;
