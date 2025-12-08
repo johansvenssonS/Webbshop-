@@ -62,6 +62,10 @@ header {
     color: white;
 }
 
+.menuButton:hover {
+    background: #2563eb;
+}
+
 #categories {
     display: flex;
     gap: 20px;
