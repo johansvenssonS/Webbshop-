@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <button id="open-button">Varukorg</button>
+
+            <div class="basket-container" id="basket-container">
+                <div class="basket">
+                    <!-- Ska vara en lista där produkterna importeras från JS -->
+                    <div class="basket-header">
+                        <h2>Varukorg/Produktvy</h2>
+                        <button id="close-button">Stäng</button>
+                    </div>
+                    <img
+                        src="data:image/jpeg;base64,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"
+                        alt="brödrost"
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo, magnam aperiam temporibus sequi nesciunt natus
+                        quia sapiente, eaque soluta iste vel dolorem sunt
+                        praesentium nihil repellat. Iste officia at ratione,
+                        animi odit molestiae eos porro aspernatur rem eveniet
+                        mollitia saepe. Fugit delectus excepturi amet maiores
+                        earum itaque dolorum quasi et.
+                    </p>
+                    <span>Pris: 100kr</span>
+                </div>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

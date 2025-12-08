@@ -1,5 +1,4 @@
 import { Store } from "./src/store.js";
-import { Product } from "./src/product.js";
 import { SingleProductView } from "./component/pSite.js";
 
 // const mockText =
@@ -15,24 +14,27 @@ import { SingleProductView } from "./component/pSite.js";
 // let p2 = new Product("Begagnad brödrost", 299, "static/brödrost.png", mockText);
 // let p3 = new Product("Ny fräschbrödrost", 499, "static/brödrost.png", mockText);
 
-let store = new Store();
-
-
-let fullStore =  await store.getProducts();
-console.log(fullStore);
-
+// let store = new Store();
 // store.addToStore(p1);
 // store.addToStore(p2);
 // store.addToStore(p3);
+
+
+let store = new Store();
+let fullStore =  await store.getProducts();
+let pStore = store.createProducts(fullStore);
+console.log(pStore);
+
+
 
 // console.log(`Hela sortimbewentet:${store}`);
 // console.log("Hela sortimentet", store.store);
 // console.log("Produkt1", p1.name);
 // console.log("Produkt2", p2.name);
 
-const createKarusell = (store) => {
+const createKarusell = (fullStore) => {
   const productCaro = document.querySelector(".product-caro");
-
+  
   for (let p of store.store) {
     // console.log(p);
     let div = document.createElement("div");
