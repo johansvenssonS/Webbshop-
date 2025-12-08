@@ -55,7 +55,8 @@ header {
 }
 
 .menuButton {
-    padding: 10px 30px;
+    width: 200px;
+    height: 30px;
     border: none;
     border-radius: 5px;
     background-color: #3b82f6;
