@@ -10,23 +10,30 @@ store.createProducts(productData);
 console.log(store)
 
 
-const createKarusell = (fullStore) => {
-  const productCaro = document.querySelector(".product-caro");
+
+const createKarusell = (store) => {
+  let productGrid = document.createElement("div");
+    productGrid.classList.add("productGrid");
+    const main = document.querySelector("main");
+    main.appendChild(productGrid);
   
   for (let p of store.store) {
-    // console.log(p);
     let div = document.createElement("div");
-    div.classList.add("itemcard");
+    div.classList.add("product");
+    
     div.innerHTML = `
-    <img src="${p.image}" class="product-image" />
+    <img src="${p.image}"/>
       <div class="product-text">
         <h4 class="product-name">${p.name}</h4>
         <div class="product-price">Pris:${p.price}</div>
         <p>${p.description}</p>
-      </div>
           
     `;
+     productGrid.appendChild(div);
   }
+ 
+}
+let karusell = createKarusell(store);
 
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
