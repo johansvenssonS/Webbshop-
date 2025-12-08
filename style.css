@@ -48,8 +48,22 @@ header {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+    border: none;
 }
 #checkout:hover {
+    background: #2563eb;
+}
+
+.menuButton {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b82f6;
+    color: white;
+}
+
+.menuButton:hover {
     background: #2563eb;
 }
 
