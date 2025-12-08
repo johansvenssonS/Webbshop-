@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 2px black;
+    gap: 10px;
+    flex-grow: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+/* appliceras på div:ar i #topHeader (istället för att använda class) */
+#topHeader div {
+    /*  border: solid; */
+}
+
+#logo {
+    flex-grow: 7;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+#checkout {
+    /* flex-grow: 1; */
+    background: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#checkout:hover {
+    background: #2563eb;
+}
+
+#categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: solid; */
+}
+
+/* appliceras på div:ar i #categories (istället för att använda class) */
+#categories div {
+    /*border: solid;*/
+    /* flex-grow: 1; */
+    padding: 10px 20px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#categories div:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+main {
+    /* border: solid 2px black; */
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    /* max-width: 1400px; */
+    /* background-color: red; */
+    /* height: 100%; */
+}
+
+#productGrid {
+    /*     background-color: blueviolet;
+ */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    /*     border: solid 2px red;
+ */
+    align-items: center;
+    /* flex-grow: 1; */
+
+    /* max-width: 400px; */
+    width: 100%;
+    flex-basis: 30%;
+    background: white;
+    border-radius: 16px;
+    /* overflow: hidden; */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+
+    /* hard coded not so good? */
+    min-width: 283px;
+
+    height: 100%;
+    /* object-fit: cover; */
+}
+.product h4 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #1e293b;
+}
+
+.price {
+    text-align: center;
+    padding: 0 20px 10px;
+    font-weight: bold;
+    color: #3b82f6;
+    /* font-size: 1.3rem; */
+}
+
+main h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #1e293b;
+}
+
+/* FOOTER */
+footer {
+    border: solid 2px black;
+    flex-grow: 0;
+    /* text-align: center; */
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+}
