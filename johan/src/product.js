@@ -4,6 +4,8 @@ class Product {
     this.price = price;
     this.image = image;
     this.description = description;
+    this.quantity = 0;
+    this.category 
   }
   getName = () => {
     return this.name;
@@ -19,4 +21,18 @@ class Product {
   };
 }
 
+
+
+class kundkorg {
+  constructor(){
+    this.varukorg = []
+  }
+
+  addToKorg = (item) => {
+    this.varukorg.push(item)
+  }
+}
+
+   
 export { Product };
+
