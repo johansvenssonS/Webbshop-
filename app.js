@@ -1,4 +1,40 @@
 //// hej hej hej
+import { Store } from "./src/store.js";
+
+
+let store = new Store();
+
+let productData = await store.getProducts();
+store.createProducts(productData);
+
+console.log(store)
+
+
+
+const createKarusell = (store) => {
+  let productGrid = document.createElement("div");
+    productGrid.classList.add("productGrid");
+    const main = document.querySelector("main");
+    main.appendChild(productGrid);
+  
+  for (let p of store.store) {
+    let div = document.createElement("div");
+    div.classList.add("product");
+    
+    div.innerHTML = `
+    <img src="${p.image}"/>
+      <div class="product-text">
+        <h4 class="product-name">${p.name}</h4>
+        <div class="product-price">Pris:${p.price}</div>
+        <p>${p.description}</p>
+          
+    `;
+     productGrid.appendChild(div);
+  }
+ 
+}
+let karusell = createKarusell(store);
+
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
                 <div class="product">

@@ -98,7 +98,7 @@ main {
     /* height: 100%; */
 }
 
-#productGrid {
+.productGrid {
     /*     background-color: blueviolet;
  */
     display: flex;
