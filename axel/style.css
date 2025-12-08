@@ -1,2 +1,61 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
+#open-button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+#close-button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    height: 5vh;
+}
+
+.basket-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.basket-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.basket {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 50px;
+    width: 900px;
+    max-width: 100%;
+}
+
+.basket-header {
+    display: flex;
+    justify-content: space-between;
+}
