@@ -1,6 +1,7 @@
 class SingleProductView {
-  constructor(product) {
+  constructor(product, varukorg) {
     this.product = product;
+    this.varukorg = varukorg
   }
 
   renderView = (p) => {
