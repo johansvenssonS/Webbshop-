@@ -31,12 +31,28 @@ const createKarusell = store => {
 };
 let karusell = createKarusell(store);
 
-const kökFilter = category => {
-    return category === "kök";
-};
+function filterProduct(value) {
+    const buttons = document.querySelectorAll(".button-value");
+    const selected = value.trim().toUpperCase();
 
-const kitchenSide = karusell.filter(kökFilter);
-console.log(kitchenSide);
+    buttons.forEach(button => {
+        const text = button.textContent.trim().toUpperCase();
+        button.classList.toggle("active", text === selected);
+    });
+}
+
+/* function filterProduct(value) {
+    let buttons = document.querySelectorAll(".button-value");
+    buttons.forEach(button => {
+        if (value.toUpperCase() == button.innerText.toUpperCase()) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+}
+ */
+
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
                 <div class="product">
