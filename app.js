@@ -1,39 +1,27 @@
 //// hej hej hej
 import { Store } from "./src/store.js";
+import { createProductView, filterEvents } from "./components/productView.js";
 
+///VID UPPSTART HÄMTA ALLA PRODUKTER
 
+/// Skapa nytt Store objekt
 let store = new Store();
-
+/// Hämta alla produkter i Json
 let productData = await store.getProducts();
+/// Skapa produkt objekt ifrån Json Data I store objekt createProducts()
 store.createProducts(productData);
 
-console.log(store)
+let productsSortiment = store.getStore();
+/// I samma funktion createProducts() läggs även de till i Store Objekt
+///___________________________________________________
+/// Skapa produktVyn med store objektet
+let view = createProductView(productsSortiment);
+console.log(store);
 
-
-
-const createKarusell = (store) => {
-  let productGrid = document.createElement("div");
-    productGrid.classList.add("productGrid");
-    const main = document.querySelector("main");
-    main.appendChild(productGrid);
-  
-  for (let p of store.store) {
-    let div = document.createElement("div");
-    div.classList.add("product");
-    
-    div.innerHTML = `
-    <img src="${p.image}"/>
-      <div class="product-text">
-        <h4 class="product-name">${p.name}</h4>
-        <div class="product-price">Pris:${p.price}</div>
-        <p>${p.description}</p>
-          
-    `;
-     productGrid.appendChild(div);
-  }
- 
-}
-let karusell = createKarusell(store);
+///Filtrera store, returnerar en kopia på matchande objekt i store arr[]
+let filtered = store.filterProducts("Kök");
+filterEvents(store);
+console.log("Filtrerat", filtered);
 
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
