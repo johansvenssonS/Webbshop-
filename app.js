@@ -1,27 +1,24 @@
 //// hej hej hej
 import { Store } from "./src/store.js";
 
-
 let store = new Store();
 
 let productData = await store.getProducts();
 store.createProducts(productData);
 
-console.log(store)
+console.log(store);
 
-
-
-const createKarusell = (store) => {
-  let productGrid = document.createElement("div");
+const createKarusell = store => {
+    let productGrid = document.createElement("div");
     productGrid.classList.add("productGrid");
     const main = document.querySelector("main");
     main.appendChild(productGrid);
-  
-  for (let p of store.store) {
-    let div = document.createElement("div");
-    div.classList.add("product");
-    
-    div.innerHTML = `
+
+    for (let p of store.store) {
+        let div = document.createElement("div");
+        div.classList.add("product");
+
+        div.innerHTML = `
     <img src="${p.image}"/>
       <div class="product-text">
         <h4 class="product-name">${p.name}</h4>
@@ -29,12 +26,17 @@ const createKarusell = (store) => {
         <p>${p.description}</p>
           
     `;
-     productGrid.appendChild(div);
-  }
- 
-}
+        productGrid.appendChild(div);
+    }
+};
 let karusell = createKarusell(store);
 
+const kökFilter = category => {
+    return category === "kök";
+};
+
+const kitchenSide = karusell.filter(kökFilter);
+console.log(kitchenSide);
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
                 <div class="product">
