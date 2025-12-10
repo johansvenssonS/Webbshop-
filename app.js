@@ -31,19 +31,10 @@ const createKarusell = store => {
 };
 let karusell = createKarusell(store);
 
-// AI "Förbättring" på min funktion
-/* function filterProduct(value) {
-    const buttons = document.querySelectorAll(".button-value");
-    const selected = value.trim().toUpperCase();
+const buttons = document.querySelectorAll(".menuButton");
 
-    buttons.forEach(button => {
-        const text = button.textContent.trim().toUpperCase();
-        button.classList.toggle("active", text === selected);
-    });
-} */
-
-function filterProduct(value) {
-    let buttons = document.querySelectorAll(".button-value");
+const filterProduct = value => {
+    let buttons = document.querySelectorAll(".menuButton");
     buttons.forEach(button => {
         if (value.toUpperCase() == button.innerText.toUpperCase()) {
             button.classList.add("active");
@@ -51,7 +42,15 @@ function filterProduct(value) {
             button.classList.remove("active");
         }
     });
-}
+};
+
+// Lägg på klick-event på varje knapp
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.textContent; // hämtar "Kök"
+        filterProduct(value);
+    });
+});
 
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
