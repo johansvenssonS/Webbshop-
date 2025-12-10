@@ -31,6 +31,7 @@ const createKarusell = store => {
 };
 let karusell = createKarusell(store);
 
+// AI "Förbättring" på min funktion
 function filterProduct(value) {
     const buttons = document.querySelectorAll(".button-value");
     const selected = value.trim().toUpperCase();
