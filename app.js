@@ -32,7 +32,7 @@ const createKarusell = store => {
 let karusell = createKarusell(store);
 
 // AI "Förbättring" på min funktion
-function filterProduct(value) {
+/* function filterProduct(value) {
     const buttons = document.querySelectorAll(".button-value");
     const selected = value.trim().toUpperCase();
 
@@ -40,9 +40,9 @@ function filterProduct(value) {
         const text = button.textContent.trim().toUpperCase();
         button.classList.toggle("active", text === selected);
     });
-}
+} */
 
-/* function filterProduct(value) {
+function filterProduct(value) {
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach(button => {
         if (value.toUpperCase() == button.innerText.toUpperCase()) {
@@ -52,7 +52,6 @@ function filterProduct(value) {
         }
     });
 }
- */
 
 /* <h2>Kategori Titel</h2>
             <div id="productGrid">
