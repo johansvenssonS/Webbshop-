@@ -68,6 +68,7 @@ export const productModalEvents = (btn, p) => {
         <a class="modal-name">${p.name}</a>
         <div class="modal-price">Pris:${p.price}</div>
         <p>${p.description}</p>
+        <button class="btnCart">Lägg till</button>
       </div>
       </div>
     `;
