@@ -106,6 +106,11 @@ main {
   margin-bottom: 10px;
   border: 2px solid black;
 }
+.product img {
+  height: 200px;
+  width: 200px;
+}
+
 .modal-image {
   height: 250px;
   width: 250px;

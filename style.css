@@ -220,6 +220,11 @@ footer {
   font-weight: bold;
 }
 
+.product img {
+  height: 300px;
+  width: 100%;
+}
+
 .close:hover,
 .close:focus {
   color: black;
