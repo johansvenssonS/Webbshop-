@@ -1,3 +1,4 @@
+import { getCart } from "../app.js";
 ///Skapa ProduktVyn alltså manipulera productGrid
 /// Byggs av listan av produkter inte Store klassen
 export const createProductView = (store) => {
@@ -25,7 +26,6 @@ export const createProductView = (store) => {
       <div class="product-text">
         <h4 class="product-name">${p.name}</h4>
         <div class="product-price">Pris:${p.price}</div>
-        <p>${p.description}</p>
         <button class="modal-product">Läs mer</button>
     `;
 
@@ -75,6 +75,12 @@ export const productModalEvents = (btn, p) => {
 
     document.body.appendChild(popUp);
     popUp.style.display = "block";
+
+    let buyBtn = popUp.querySelector(".btnCart");
+    buyBtn.addEventListener("click", (event) => {
+      let cart = getCart();
+      cart.addToBasket(p);
+    });
 
     let x = popUp.querySelector(".close");
     x.addEventListener("click", (event) => {
