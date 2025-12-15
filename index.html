@@ -10,9 +10,7 @@
         <header>
             <div id="topHeader">
                 <div id="logo">TechStore</div>
-                <div class="basketButton">
-                    <button id="checkout">Kundvagn</button>
-                    <span>0</span>
+                <button id=""openCartBtn>Varukorg (<span id="cartCount">0</span>)</button>
                 </div>
             </div>
             <div id="categories">
@@ -22,6 +20,15 @@
                 <button class="menuButton">Städning</button>
             </div>
         </header>
+
+        <div id="cartModal" class="hidden">
+            <div class="cartContent">
+                <button id="closeCart">Stäng</button>
+                <h2>Varukorg</h2>
+                <ul id="cartList"></ul>
+                <p>Total: <span id="cartTotal">0</span> kr</p>
+            </div>
+        </div>
         <footer><p>&copy 2025 Webbshop- All rights reserved.</p></footer>
         <script type="module" src="app.js"></script>
     </body>

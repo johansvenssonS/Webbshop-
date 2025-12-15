@@ -19,15 +19,3 @@ class Product {
         return this.description;
     };
 }
-
-class kundkorg {
-    constructor() {
-        this.varukorg = [];
-    }
-
-    addToKorg = item => {
-        this.varukorg.push(item);
-    };
-}
-
-export { Product };
