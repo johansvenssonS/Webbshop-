@@ -23,50 +23,62 @@ let filtered = store.filterProducts("Kök");
 filterEvents(store);
 console.log("Filtrerat", filtered);
 
-/* <h2>Kategori Titel</h2>
-            <div id="productGrid">
-                <div class="product">
-                    <img
-                        src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800"
-                        alt=""
-                    />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
+/* // Cart data
+let cart = [];
 
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/300/200" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">1 990 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-                <div class="product">
-                    <img src="https://picsum.photos/id/1040/400/300" alt="" />
-                    <h4>Namn på produkt</h4>
-                    <div class="price">4 290 kr</div>
-                </div>
-            </div> */
+// DOM-element
+const openCartBtn = document.getElementById("openCartBtn");
+const cartModal = document.getElementById("cartModal");
+const closeCartBtn = document.getElementById("closeCartBtn");
+const cartItemsList = document.getElementById("cartItemsList");
+const cartCountElem = document.getElementById("cartCount");
+const cartTotalElem = document.getElementById("cartTotal");
+
+// Öppna/stäng modal
+openCartBtn.addEventListener("click", () => {
+  cartModal.classList.remove("hidden");
+  renderCart();
+});
+closeCartBtn.addEventListener("click", () => {
+  cartModal.classList.add("hidden");
+});
+
+// Lägg till produkt i cart
+function addToCart(product) {
+  cart.push(product);
+  updateCartCount();
+}
+
+// Ta bort produkt
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  renderCart();
+  updateCartCount();
+}
+
+// Räkna totalpris
+function getCartTotal() {
+  return cart.reduce((sum, item) => sum + item.price, 0);
+}
+
+// Uppdatera antal i cart-knappen
+function updateCartCount() {
+  cartCountElem.textContent = cart.length;
+}
+
+// Rendera cart-listan
+function renderCart() {
+  cartItemsList.innerHTML = "";
+  cart.forEach((item, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <span>${item.name} — ${item.price} kr</span>
+      <span class="remove-btn" onclick="removeFromCart(${i})">✖</span>
+    `;
+    cartItemsList.appendChild(li);
+  });
+
+  cartTotalElem.textContent = getCartTotal();
+}
+ */
