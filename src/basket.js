@@ -23,4 +23,8 @@ class Basket {
     };
 }
 
+  // saveBasket = () => {
+  //   localStorage.setItem("cart", JSON.stringify(this.cart));
+  // }
+}
 export { Basket };

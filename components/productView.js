@@ -1,22 +1,23 @@
 import { getCart } from "../app.js";
+import { updateCartBadge } from "./cartView.js";
 ///Skapa ProduktVyn alltså manipulera productGrid
 /// Byggs av listan av produkter inte Store klassen
 export const createProductView = (store) => {
   ///Om productGrid finns så töm den
   /// När sidan startar så laddas allt in,
   // så den finns vid klick på kategori
-  if (document.querySelector(".productGrid")) {
-    let productGrid = document.querySelector(".productGrid");
+  let productGrid = document.querySelector(".productGrid");
+
+  if (productGrid) {
     productGrid.innerHTML = "";
   } else {
     /// Annars skapa den och lägg in den under main
-    let productGrid = document.createElement("div");
     productGrid.classList.add("productGrid");
     const main = document.querySelector("main");
     main.appendChild(productGrid);
   }
   ///Skapa korten
-  let productGrid = document.querySelector(".productGrid");
+  
   for (let p of store) {
     let div = document.createElement("div");
     div.classList.add("product");
@@ -80,6 +81,8 @@ export const productModalEvents = (btn, p) => {
     buyBtn.addEventListener("click", (event) => {
       let cart = getCart();
       cart.addToBasket(p);
+      updateCartBadge(cart);
+      
     });
 
     let x = popUp.querySelector(".close");

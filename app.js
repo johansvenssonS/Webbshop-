@@ -23,9 +23,9 @@ let view = createProductView(productsSortiment);
 console.log(store);
 
 ///Filtrera store, returnerar en kopia på matchande objekt i store arr[]
-let filtered = store.filterProducts("Kök");
+// let filtered = store.filterProducts("Kök");
 filterEvents(store);
-console.log("Filtrerat", filtered);
+// console.log("Filtrerat", filtered);
 
 export function getCart() {
   return cart;
