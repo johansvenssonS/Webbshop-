@@ -194,5 +194,691 @@
     "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
     "description": "HEPA luftrenare för rum upp till 50m². Tar bort pollen, damm och allergener. Tyst läge för nattbruk och smart sensor.",
     "category": "Städning"
+  },
+  {
+    "name": "Smartklocka",
+    "price": 2499,
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+    "description": "Smartklocka med pulsmätare, GPS och notisfunktioner. Vattentät och kompatibel med både iOS och Android.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Surfplatta",
+    "price": 3999,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+    "description": "10-tums surfplatta med högupplöst skärm och lång batteritid. Perfekt för underhållning och arbete på språng.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "E-boksläsare",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+    "description": "Lätt e-boksläsare med högupplöst e-ink skärm. Justerbar bakgrundsbelysning och lång batteritid. Perfekt för bokälskare.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Espressomaskin",
+    "price": 2499,
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400",
+    "description": "Professionell espressomaskin med 15 bars tryck. Inbyggd mjölkskummare och dubbla koppar samtidigt.",
+    "category": "Kök"
+  },
+  {
+    "name": "Stavmixer",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400",
+    "description": "Kraftfull stavmixer med varierbar hastighet. Rostfritt stål och inkluderar hackare och visptillbehör.",
+    "category": "Kök"
+  },
+  {
+    "name": "Matberedare",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Multifunktionell matberedare med 10 olika funktioner. 1.5L skål och flera olika knivar för alla behov.",
+    "category": "Kök"
+  },
+  {
+    "name": "Juicepress",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400",
+    "description": "Slow juicer som bevarar alla näringsämnen. Tyst motor och enkel att rengöra.",
+    "category": "Kök"
+  },
+  {
+    "name": "Vattenkanna med filter",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400",
+    "description": "Filterkaraff som förbättrar vattenkvaliteten. 2.5L kapacitet och miljövänligt filter.",
+    "category": "Kök"
+  },
+  {
+    "name": "Kjöttkvarn",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Elektrisk köttkvarn med 800W motor. Perfekt för hemgjorda hamburgare och korv.",
+    "category": "Kök"
+  },
+  {
+    "name": "Våffeljärn",
+    "price": 549,
+    "image": "https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400",
+    "description": "Våffeljärn med non-stick beläggning. Gör 4 hjärtformade våfflor samtidigt.",
+    "category": "Kök"
+  },
+  {
+    "name": "Smörgåsgrill",
+    "price": 449,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
+    "description": "Kontaktgrill för perfekta toasts och paninis. Avtagbara plattor som går i diskmaskin.",
+    "category": "Kök"
+  },
+  {
+    "name": "Slow Cooker",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Långsamkokare med 5.5L kapacitet. 3 värmenivåer och timer. Perfekt för grytor och såser.",
+    "category": "Kök"
+  },
+  {
+    "name": "Vattenbad",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400",
+    "description": "Sous vide-maskin för professionell matlagning. Exakt temperaturkontroll och WiFi-anslutning.",
+    "category": "Kök"
+  },
+  {
+    "name": "Isbitar maskin",
+    "price": 1899,
+    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400",
+    "description": "Kompakt ismaskin som gör 12 kg is per dag. Tre olika isstorlekar.",
+    "category": "Kök"
+  },
+  {
+    "name": "Köksassistent",
+    "price": 3999,
+    "image": "https://images.unsplash.com/photo-1578643463396-0997cb5328c1?w=400",
+    "description": "Kraftfull köksassistent med 5L skål. Inkluderar degkrok, visp och mixer.",
+    "category": "Kök"
+  },
+  {
+    "name": "Brödbakning maskin",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
+    "description": "Automatisk brödmaskin med 12 program. Bakar perfekt bröd medan du sover.",
+    "category": "Kök"
+  },
+  {
+    "name": "Popcornmaskin",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Heta luftpopcornmaskin utan olja. Gör 2L popcorn på under 3 minuter.",
+    "category": "Kök"
+  },
+  {
+    "name": "Äggkokare",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400",
+    "description": "Elektrisk äggkokare för 7 ägg. Perfekt konsistens varje gång med ljudsignal.",
+    "category": "Kök"
+  },
+  {
+    "name": "Miniugn",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
+    "description": "Kompakt miniugn med 20L volym. Grill, varmlufts och vanliga ugnslägen.",
+    "category": "Kök"
+  },
+  {
+    "name": "Riskoker",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
+    "description": "Smart riskoker med flera program. Håller riset varmt i upp till 12 timmar.",
+    "category": "Kök"
+  },
+  {
+    "name": "Vakuumförpackare",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Vakuumförpackare för långvarig förvaring. Inkluderar påsar och slangar.",
+    "category": "Kök"
+  },
+  {
+    "name": "Grillplatta",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400",
+    "description": "Elektrisk grillplatta med termostat. Stor yta perfekt för familjemiddagar.",
+    "category": "Kök"
+  },
+  {
+    "name": "Knivset",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400",
+    "description": "Professionellt knivset med 8 knivar i japanskt stål. Inkluderar knivblock.",
+    "category": "Kök"
+  },
+  {
+    "name": "Induktionshäll Portabel",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400",
+    "description": "Portabel induktionshäll med touchkontroll. 2000W effekt och 10 effektnivåer.",
+    "category": "Kök"
+  },
+  {
+    "name": "Vinkylen",
+    "price": 2999,
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400",
+    "description": "Elegant vinkyl för 12 flaskor. Digital temperaturkontroll och LED-belysning.",
+    "category": "Kök"
+  },
+  {
+    "name": "Kastruller Set",
+    "price": 1899,
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400",
+    "description": "Set med 5 kastruller i rostfritt stål. Passar alla spistyper inklusive induktion.",
+    "category": "Kök"
+  },
+  {
+    "name": "Golvlampa",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400",
+    "description": "Stilren golvlampa med justerbar arm. LED-belysning med 3 ljusstyrkor.",
+    "category": "Hem"
+  },
+  {
+    "name": "Taklampor LED",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=400",
+    "description": "Modern taklampa med dimbar LED. Fjärrkontroll och färgtemperaturinställning.",
+    "category": "Hem"
+  },
+  {
+    "name": "Nattlampa",
+    "price": 249,
+    "image": "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=400",
+    "description": "Mjuk nattlampa med rörelsesensor. Perfekt för barnrum och korridorer.",
+    "category": "Hem"
+  },
+  {
+    "name": "Luftavfuktare",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
+    "description": "Effektiv luftavfuktare för rum upp till 30m². Automatisk avstängning när tanken är full.",
+    "category": "Hem"
+  },
+  {
+    "name": "Värmefläkt",
+    "price": 449,
+    "image": "https://images.unsplash.com/photo-1585740565969-f5d82c02c2a1?w=400",
+    "description": "Kompakt värmefläkt med keramiskt element. Tyst och energieffektiv.",
+    "category": "Hem"
+  },
+  {
+    "name": "Termostat Smart",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1558089687-e5a8f47eb4a2?w=400",
+    "description": "Smart WiFi-termostat med app-styrning. Lär sig dina vanor och sparar energi.",
+    "category": "Hem"
+  },
+  {
+    "name": "Brandvarnare",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Smart brandvarnare med 10 års batteri. Testknapp och ljudindikator.",
+    "category": "Hem"
+  },
+  {
+    "name": "Dörrklocka Smart",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=400",
+    "description": "Video-dörrklocka med WiFi. Tvåvägskommunikation och rörelsedetektion.",
+    "category": "Hem"
+  },
+  {
+    "name": "Säkerhetskamera",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400",
+    "description": "WiFi-säkerhetskamera med nattseende. Molnlagring och mobilnotiser.",
+    "category": "Hem"
+  },
+  {
+    "name": "Rökdetektor",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Optisk rökdetektor med lithiumbatteri. Lätt att montera och underhålla.",
+    "category": "Hem"
+  },
+  {
+    "name": "Tidur Digital",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400",
+    "description": "Enkel timer med stor display. Flera timer samtidigt och magnetfäste.",
+    "category": "Hem"
+  },
+  {
+    "name": "Väggklocka",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400",
+    "description": "Stilren väggklocka med tyst urverk. Stor lätt avläst urtavla.",
+    "category": "Hem"
+  },
+  {
+    "name": "Fjärrkontroll Universal",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Universalfjärrkontroll för alla enheter. Enkel programmering och stor knappanel.",
+    "category": "Hem"
+  },
+  {
+    "name": "Öronproppar Noise Cancelling",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+    "description": "Bekväma öronproppar för bättre sömn. Tvärbara och återanvändbara.",
+    "category": "Hem"
+  },
+  {
+    "name": "Babyphone",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=400",
+    "description": "Trådlös babyvakt med video. Nattseende och tvåvägskommunikation.",
+    "category": "Hem"
+  },
+  {
+    "name": "Snarkskydd",
+    "price": 499,
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400",
+    "description": "Anti-snarklösning med smart sensor. Ergonomisk design för bekväm sömn.",
+    "category": "Hem"
+  },
+  {
+    "name": "Massagekudde",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Elektrisk massagekudde för nacke och rygg. Värme och olika intensiteter.",
+    "category": "Hem"
+  },
+  {
+    "name": "Fotvärmare",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1585740565969-f5d82c02c2a1?w=400",
+    "description": "Mjuk fotvärmare med flera värmenivåer. Tvättbart hölje.",
+    "category": "Hem"
+  },
+  {
+    "name": "Sängvärmare",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1631049035182-249067d7618e?w=400",
+    "description": "Elektrisk sängvärmare med timer. Mjuk fleece och säker överhettningsskydd.",
+    "category": "Hem"
+  },
+  {
+    "name": "Aromadiffusor",
+    "price": 449,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
+    "description": "Ultraljuds aromadiffusor med LED-ljus. Tyst drift och automatisk avstängning.",
+    "category": "Hem"
+  },
+  {
+    "name": "Ljusslinga LED",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=400",
+    "description": "10 meter LED-ljusslinga för dekoration. Vattentät och energisnål.",
+    "category": "Hem"
+  },
+  {
+    "name": "Väggsafe",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Digital värdeskåp med elektroniskt lås. Bultar för fast montering.",
+    "category": "Hem"
+  },
+  {
+    "name": "Dammsugarrobot Moppfunktion",
+    "price": 4499,
+    "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400",
+    "description": "Robotdammsugare med mopp. LiDAR-navigation och självtömmande station.",
+    "category": "Hem"
+  },
+  {
+    "name": "Fönstertimer",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Tidsstyrd lamptimer för säkerhet. Simulerar närvaro när du är borta.",
+    "category": "Hem"
+  },
+  {
+    "name": "Trådlösa Öronsnäckor",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+    "description": "True wireless earbuds med laddningsetui. 24 timmars total speltid.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Soundbar",
+    "price": 1999,
+    "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400",
+    "description": "Kraftfull soundbar med subwoofer. Dolby Atmos och Bluetooth-anslutning.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Projektor",
+    "price": 3499,
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400",
+    "description": "Full HD-projektor med 3000 lumen. Inbyggd högtalare och WiFi.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Gaming Headset",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1599669454699-248893623440?w=400",
+    "description": "Gaming-headset med surround sound. Brusreducerande mikrofon och RGB-ljus.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Extern Hårddisk 2TB",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=400",
+    "description": "Portabel extern SSD med 2TB. USB-C och snabb dataöverföring.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "USB-Hub",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400",
+    "description": "7-ports USB 3.0 hub med strömadapter. Perfekt för desktop och laptop.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "HDMI Kabel 4K",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Premium HDMI 2.1 kabel 2 meter. Stöd för 4K@120Hz och HDR.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Router WiFi 6",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400",
+    "description": "Mesh WiFi-router med 6E-stöd. Täcker upp till 200m² med snabbt internet.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Strömskenor USB",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Grenuttag med 6 uttag och 4 USB-portar. Överspänningsskydd och strömbrytare.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Powerbank 20000mAh",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400",
+    "description": "Kraftfull powerbank med snabbladdning. Laddar flera enheter samtidigt.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Trådlös Laddare",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1591290619762-c588f7e83bbf?w=400",
+    "description": "Qi-laddplatta för smartphones. 15W snabbladdning och non-slip yta.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Skärmarm",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
+    "description": "Justerbar skärmarm för skärmar upp till 32 tum. 360° rotation och tilt.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Dockningsstation",
+    "price": 1999,
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400",
+    "description": "USB-C dockningsstation med 11 portar. Laddar laptop med upp till 100W.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Grafiktablett",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1616390952208-e888df2f8760?w=400",
+    "description": "Professionell ritplatta med 8192 trycknivåer. Perfekt för digital konst.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Ring Light",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400",
+    "description": "LED-ringlampa med stativ. Dimbar och olika färgtemperaturer för video.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Mikrofon USB",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400",
+    "description": "Kondensatormikrofon med popfilter. Perfekt för podcasts och streaming.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Green Screen",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Portabel green screen bakgrund. Hopfällbar och enkel att sätta upp.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Gaming-stol",
+    "price": 2499,
+    "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400",
+    "description": "Ergonomisk gamingstol med nackstöd. Höjdinställbar och ländryggsstöd.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Mekanisk Numpad",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
+    "description": "Trådlöst numeriskt tangentbord. Perfekt för bokföring och databearbetning.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Kabelhållare",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Kabelorganiserare för skrivbord. Håller kablar på plats och snyggt.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Stativ för Laptop",
+    "price": 499,
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400",
+    "description": "Ergonomiskt laptopstativ i aluminium. Justerbar vinkel och höjd.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Monitor 27 tum",
+    "price": 2999,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400",
+    "description": "QHD gaming-monitor med 144Hz. IPS-panel och HDR400.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Bärbar SSD 1TB",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400",
+    "description": "Kompakt NVMe SSD. Upp till 1000MB/s läshastighet.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "SD-kort 128GB",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Snabbt SD-kort UHS-I. Perfekt för kameror och drönare.",
+    "category": "Elektronik"
+  },
+  {
+    "name": "Torktumlare",
+    "price": 5999,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Energieffektiv torktumlare med värmepump. 8 kg kapacitet och sensor.",
+    "category": "Städning"
+  },
+  {
+    "name": "Tvättork Kombi",
+    "price": 7999,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Tvättmaskin med torkfunktion. 9 kg tvätt, 6 kg tork i en maskin.",
+    "category": "Städning"
+  },
+  {
+    "name": "Bäddset Premium",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1631049035182-249067d7618e?w=400",
+    "description": "Lyxigt bomullssatäng. Sval och bekväm för god nattsömn.",
+    "category": "Städning"
+  },
+  {
+    "name": "Klädvårdskit",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400",
+    "description": "Komplett set för klädvård. Borstar, fnöskrulle och fläckborttagning.",
+    "category": "Städning"
+  },
+  {
+    "name": "Klädångare",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400",
+    "description": "Handhållen ångstrykare. Perfekt för resor och snabb upfräschning.",
+    "category": "Städning"
+  },
+  {
+    "name": "Torkställning",
+    "price": 449,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Hopfällbart torkställning med 20 meter torkyta. Rostfritt stål.",
+    "category": "Städning"
+  },
+  {
+    "name": "Skohylla",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "5-våningshylla för skor. Plats för 15 par skor.",
+    "category": "Städning"
+  },
+  {
+    "name": "Sopskopa Set",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Ergonomisk sopskopa med borste. Står upprätt och lång handtag.",
+    "category": "Städning"
+  },
+  {
+    "name": "Moppset",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400",
+    "description": "Självvridande mopp med hink. Mikrofiber och justerbart skaft.",
+    "category": "Städning"
+  },
+  {
+    "name": "Fönstertrasor Mikrofiber",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400",
+    "description": "Set med 6 mikrofibertrasor. Ger ströfria fönster utan kemikalier.",
+    "category": "Städning"
+  },
+  {
+    "name": "Allrengöringsmedel",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
+    "description": "Miljövänligt universalrengöringsmedel. 1 liter koncentrat.",
+    "category": "Städning"
+  },
+  {
+    "name": "Skurborste Elektrisk",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400",
+    "description": "Trådlös skurborste för bad och kök. 3 borsthuvuden och laddstation.",
+    "category": "Städning"
+  },
+  {
+    "name": "Sopborste Mjuk",
+    "price": 129,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Mjuk golvborste för känsliga golv. Antistatiska borst.",
+    "category": "Städning"
+  },
+  {
+    "name": "Avloppsrensare",
+    "price": 249,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Flexibel avloppsrensare. Tar bort hår och stopp enkelt.",
+    "category": "Städning"
+  },
+  {
+    "name": "Tvättmedel Miljövänlig",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Ekologiskt tvättmedel för 50 tvättar. Hypoallergenisk och parfymfri.",
+    "category": "Städning"
+  },
+  {
+    "name": "Sköljmedel",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Koncentrerat sköljmedel med färsk doft. 1.5 liter räcker länge.",
+    "category": "Städning"
+  },
+  {
+    "name": "Tvättmaskinrensare",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Avkalkningsmedel för tvättmaskin. Förlänger maskinens livslängd.",
+    "category": "Städning"
+  },
+  {
+    "name": "Diskborste Set",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
+    "description": "3-pack diskborstar med utbytbara huvuden. Ergonomiska handtag.",
+    "category": "Städning"
+  },
+  {
+    "name": "Diskmedel Ekologiskt",
+    "price": 69,
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
+    "description": "Miljövänligt diskmedel 500ml. Effektivt mot fett och hållbart.",
+    "category": "Städning"
+  },
+  {
+    "name": "Tvättkorg 3-fack",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400",
+    "description": "Sorteringskorg för tvätt med 3 fack. Hjul och utdragbara påsar.",
+    "category": "Städning"
+  },
+  {
+    "name": "Klädvårdsmaskin",
+    "price": 2499,
+    "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400",
+    "description": "Ånggarderob som fräschar upp kläder. Tar bort skrynklor och lukter.",
+    "category": "Städning"
+  },
+  {
+    "name": "Skoputskit",
+    "price": 299,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Komplett skovårdsset med borstar och krämor. Håller skor fina.",
+    "category": "Städning"
+  },
+  {
+    "name": "Mattborste",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "description": "Mattborste för djuprengöring av mattor. Kraftiga borst.",
+    "category": "Städning"
+  },
+  {
+    "name": "Kakel-rengörare",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400",
+    "description": "Speciellt kakelrengöringsmedel. Tar bort kalkfläckar effektivt.",
+    "category": "Städning"
   }
 ]
