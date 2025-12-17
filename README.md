@@ -48,8 +48,8 @@ Projektet använder följande teknologier:
 ## Gruppmedlemmar
 
 - **Johan** - [johansvenssonS](https://github.com/johansvenssonS)
-- **Sam**
-- **Axel**
+- **Sam**      [samshaalan] (https://github.com/samshaalan)
+- **Axel**  [axelkodandersson] (https://github.com/axelkodandersson)
 
 ## Funktioner
 
