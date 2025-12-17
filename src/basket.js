@@ -21,6 +21,9 @@ class Basket {
   getBasket = () => {
     return this.cart;
   };
-}
 
+  // saveBasket = () => {
+  //   localStorage.setItem("cart", JSON.stringify(this.cart));
+  // }
+}
 export { Basket };

@@ -1,4 +1,5 @@
 import { getCart } from "../app.js";
+import { updateCartBadge } from "./cartView.js";
 ///Skapa ProduktVyn alltså manipulera productGrid
 /// Byggs av listan av produkter inte Store klassen
 export const createProductView = (store) => {
@@ -80,6 +81,8 @@ export const productModalEvents = (btn, p) => {
     buyBtn.addEventListener("click", (event) => {
       let cart = getCart();
       cart.addToBasket(p);
+      updateCartBadge(cart);
+      
     });
 
     let x = popUp.querySelector(".close");

@@ -31,10 +31,10 @@ export const basketHandler = (cart) => {
       </div>
     `;
 
-    let nrOfitems = document.createElement("div");
-    nrOfitems.classList.add("cart-badge");
-    nrOfitems.innerHTML = `<span>${cart.getLength()}</span>`;
-    checkoutbtn.appendChild(nrOfitems);
+    // let nrOfitems = document.createElement("div");
+    // nrOfitems.classList.add("cart-badge");
+    // nrOfitems.innerHTML = `<span>${cart.getLength()}</span>`;
+    // checkoutbtn.appendChild(nrOfitems);
 
     document.body.appendChild(popUp);
     popUp.style.display = "block";
@@ -49,7 +49,15 @@ export const basketHandler = (cart) => {
       createPopup();
     });
   }
+
 };
+export const updateCartBadge = (cart) => {
+    let badge = document.querySelector(".cart-badge");
+    if (badge) {
+      badge.textContent = cart.getLength();
+    }
+  }
+
 
 // `
 //     <div class="modal-content">
