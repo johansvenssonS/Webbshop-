@@ -233,7 +233,7 @@ main {
     width: 250px;
     margin-bottom: 10px;
     border: 2px solid red;
-}
+}   
 
 .modal {
     display: none;
@@ -276,6 +276,10 @@ main {
 } */
 
 /* ==== Checkout Modal (refined) ==== */
+.remove {
+    background: none;
+}
+
 .modal {
     display: none;
     position: fixed;
