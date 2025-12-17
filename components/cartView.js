@@ -57,13 +57,6 @@ export const updateCartBadge = cart => {
         badge.textContent = cart.getLength();
     }
 };
-export const updateCartBadge = (cart) => {
-    let badge = document.querySelector(".cart-badge");
-    if (badge) {
-      badge.textContent = cart.getLength();
-    }
-  }
-
 
 // `
 //     <div class="modal-content">
