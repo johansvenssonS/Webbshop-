@@ -237,7 +237,7 @@ main {
     width: 250px;
     margin-bottom: 10px;
     border: 2px solid red;
-}
+}   
 
 .modal {
     display: none;
@@ -280,6 +280,17 @@ main {
 }
 
 /* ==== Checkout Modal (refined) ==== */
+
+.remove {
+    background: none;
+    border-radius: 5px;
+}
+
+.remove:hover {
+    color: red;
+    border-color: red;
+}
+
 .modal {
     display: none;
     position: fixed;
