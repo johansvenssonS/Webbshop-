@@ -20,7 +20,7 @@ export const basketHandler = cart => {
                 <img src="${product.image}" class="modal-image" />
                 <h3>${product.name}</h3>
                 <div class="product-info">
-                  <p><span>${product.price}</span><span id="kr">kr</span> </p>
+                  <p><span>${product.price}</span><span>kr</span></p>
                 </div>
                 <button class="remove">X</button>
               </li>
@@ -32,10 +32,10 @@ export const basketHandler = cart => {
       </div>
     `;
 
-        let nrOfitems = document.createElement("div");
-        nrOfitems.classList.add("cart-badge");
-        nrOfitems.innerHTML = `<span>${cart.getLength()}</span>`;
-        checkoutbtn.appendChild(nrOfitems);
+        // let nrOfitems = document.createElement("div");
+        // nrOfitems.classList.add("cart-badge");
+        // nrOfitems.innerHTML = `<span>${cart.getLength()}</span>`;
+        // checkoutbtn.appendChild(nrOfitems);
 
         document.body.appendChild(popUp);
         popUp.style.display = "block";
@@ -49,6 +49,12 @@ export const basketHandler = cart => {
         checkoutbtn.addEventListener("click", () => {
             createPopup();
         });
+    }
+};
+export const updateCartBadge = cart => {
+    let badge = document.querySelector(".cart-badge");
+    if (badge) {
+        badge.textContent = cart.getLength();
     }
 };
 
