@@ -35,6 +35,9 @@ class Store {
   filterProducts = (filter) => {
     // console.log(this.store);
     //hämta objektet
+    if(filter === "Alla"){
+      return this.store;
+    }
     let products = this.store;
     /// bygg en array med produkter product.category som är lika med filter
     const resultArr = products.filter((product) => product.category === filter);
