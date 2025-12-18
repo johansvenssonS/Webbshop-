@@ -76,7 +76,7 @@ export const updateCartCost = (cart) => {
     if (modal) {
       /// bara prank
       const originalBg = modal.style.backgroundImage;
-      modal.style.backgroundImage = "url(../static/julklapp.jpg)";
+      modal.style.backgroundImage = "url(./static/julklapp.jpg)";
       window.setTimeout(() => {
         modal.style.backgroundImage = originalBg || "";
       }, 8000);
