@@ -1,19 +1,25 @@
 import { getCart } from "../app.js";
 
+///Modul för hantering av varukorgs vyn/events
+///{param} Cart globalt objekt ifrån app.js
 export const basketHandler = (cart) => {
+  /// Kundvags knappen i header
   const checkoutbtn = document.querySelector(".checkout");
 
+  /// Funktion för att skapa varukorg Modal.
   const createPopup = () => {
-    let cartContent = cart.cart;
+    // hämta cart innehåll, objekt med produkter
+    let cartContent = cart.getBasket();
+
+    // Skapa modal popup
     let popUp = document.createElement("div");
-    console.log(cart);
     popUp.classList.add("modal");
     popUp.innerHTML = `
       <div class="modal-content">
         <button class="close" aria-label="Stäng">&times;</button>
         <h2 class="korg-title">Varukorg</h2>
         <ul class="korg-list">
-          ${cartContent
+          ${cartContent ///
             .map(
               (product) => `
               <li class="korg-item">
@@ -73,14 +79,14 @@ export const updateCartCost = (cart) => {
   let cost = document.querySelector(".cart-cost");
   if (cost) {
     cost.textContent = ` Totalt Pris: ${cart.getTotPrice()}kr`;
-    if (modal) {
-      /// bara prank
-      const originalBg = modal.style.backgroundImage;
-      modal.style.backgroundImage = "url(./static/julklapp.jpg)";
-      window.setTimeout(() => {
-        modal.style.backgroundImage = originalBg || "";
-      }, 8000);
-    }
+    // if (modal) {
+    //   /// bara prank
+    //   const originalBg = modal.style.backgroundImage;
+    //   modal.style.backgroundImage = "url(./static/julklapp.jpg)";
+    //   window.setTimeout(() => {
+    //     modal.style.backgroundImage = originalBg || "";
+    //   }, 8000);
+    // }
   }
 };
 
