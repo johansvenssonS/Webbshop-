@@ -1,7 +1,5 @@
-import { getCart } from "../app.js";
-
 ///Modul för hantering av varukorgs vyn/events
-///{param} Cart globalt objekt ifrån app.js
+///{param} Cart objekt ifrån app.js
 export const basketHandler = (cart) => {
   /// Kundvags knappen i header
   const checkoutbtn = document.querySelector(".checkout");
@@ -37,43 +35,40 @@ export const basketHandler = (cart) => {
         <h3 class="cart-cost"> Totalt Pris: ${cart.getTotPrice()}kr </h3>
       </div>
     `;
-
+    //lägga till i body(visa upp)
     document.body.appendChild(popUp);
-    // removeButton(cart);
     popUp.style.display = "block";
+    /// Event för stänga ner modalen (X)
     let x = popUp.querySelector(".close");
     x.addEventListener("click", (event) => {
       popUp.remove();
     });
   };
-
+  /// Sätta upp event på checkout knapp i header.
   if (checkoutbtn) {
     checkoutbtn.addEventListener("click", () => {
       createPopup();
       removeButton(cart);
     });
   }
-
+  /// Event för att ta bort vara ifrån varukorg (X)
   const removeButton = (cart) => {
     const removeButtons = document.querySelectorAll(".remove");
     for (let btn of removeButtons) {
       btn.addEventListener("click", (event) => {
-        console.log("hej");
         /// Här får vi hela li korg-item diven
         let selectedParentElement = event.target.parentElement;
         let selectedProductName = selectedParentElement.querySelector("h3");
-        console.log(selectedProductName.textContent);
-        console.log(cart);
         cart.removeItem(selectedProductName.textContent);
         selectedParentElement.remove();
         updateCartBadge(cart);
         updateCartCost(cart);
-        // createPopup(cart);
       });
     }
   };
 };
 
+/// updatera total kostnad i varukorgs modalen
 export const updateCartCost = (cart) => {
   let modal = document.querySelector(".modal");
   let cost = document.querySelector(".cart-cost");
@@ -90,6 +85,7 @@ export const updateCartCost = (cart) => {
   }
 };
 
+/// Uppdatera badge i header med antal produkter i kundvagn
 export const updateCartBadge = (cart) => {
   let badge = document.querySelector(".cart-badge");
   if (badge) {
