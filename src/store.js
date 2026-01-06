@@ -1,16 +1,16 @@
 import { Product } from "./product.js";
-
+/// Modul för Store Klassen
 class Store {
   constructor() {
     this.store = [];
   }
-
+  ///Hämta produkter ifrån Json Fil
   getProducts = async () => {
     const response = await fetch("./static/product.json");
     const data = await response.json();
     return data;
   };
-
+  /// Skapa produkt objekt ifrån Json data och lägg till i store arrayen
   createProducts = (data) => {
     data.forEach((item) => {
       let p = new Product(
@@ -23,10 +23,11 @@ class Store {
       this.addToStore(p);
     });
   };
+  /// Lägg till produkt objekt i store arrayen
   addToStore = (product) => {
     this.store.push(product);
   };
-
+  /// Hjälp metod för att hämta store arrayen
   getStore = () => {
     return this.store;
   };
@@ -35,7 +36,7 @@ class Store {
   filterProducts = (filter) => {
     // console.log(this.store);
     //hämta objektet
-    if(filter === "Alla"){
+    if (filter === "Alla") {
       return this.store;
     }
     let products = this.store;

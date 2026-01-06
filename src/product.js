@@ -1,3 +1,4 @@
+/// Modul för Product Klassen
 class Product {
   constructor(name, price, image, description, category) {
     this.name = name;
@@ -6,6 +7,7 @@ class Product {
     this.description = description;
     this.category = category;
   }
+  //Get hjälpmetoder, används inte
   getName = () => {
     return this.name;
   };
