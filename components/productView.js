@@ -17,7 +17,7 @@ export const createProductView = (store) => {
     main.appendChild(productGrid);
   }
   ///Skapa korten
-  
+
   for (let p of store) {
     let div = document.createElement("div");
     div.classList.add("product");
@@ -33,12 +33,9 @@ export const createProductView = (store) => {
     productGrid.appendChild(div);
     let btn = div.querySelector(".modal-product");
     productModalEvents(btn, p);
-    /// kalla på modalevent här och skicka med p (produktobjektet)
+    /// kalla på modalevent här och skicka med btn element och p (produktobjektet)
   }
 };
-///replacechild ? istället för att tömma ?
-/// createDocumentFragment annan container "off dom"
-
 /// Event för kategori eventsen
 export const filterEvents = (store) => {
   let buttons = document.querySelectorAll(".menuButton");
@@ -49,14 +46,13 @@ export const filterEvents = (store) => {
       let filtredStore = store.filterProducts(btn.textContent);
       /// Kasta upp det filtrerade upp till createProductView
       let filtredView = createProductView(filtredStore);
-      console.log(filtredStore);
+      // console.log(filtredStore);
     });
   }
 };
 
 export const productModalEvents = (btn, p) => {
-  // console.log("p objekt", p);
-  // console.log("btn", btn);
+  // Metod för att skapa produkt Modal.
 
   btn.addEventListener("click", (event) => {
     let popUp = document.createElement("div");
@@ -73,18 +69,19 @@ export const productModalEvents = (btn, p) => {
       </div>
       </div>
     `;
-
+    //lägga till i body(visa upp)
     document.body.appendChild(popUp);
     popUp.style.display = "block";
 
+    // Eventhantering för köpknapp i popUp
     let buyBtn = popUp.querySelector(".btnCart");
     buyBtn.addEventListener("click", (event) => {
       let cart = getCart();
       cart.addToBasket(p);
       updateCartBadge(cart);
-      
     });
 
+    // X knapp i modal, stänger ner/tar bort popup.
     let x = popUp.querySelector(".close");
     x.addEventListener("click", (event) => {
       popUp.remove();
