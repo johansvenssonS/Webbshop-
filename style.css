@@ -2,11 +2,10 @@
     box-sizing: border-box;
 }
 
+/* Flexbox layout för body */
 body {
     display: flex;
     flex-direction: column;
-    /* height: auto; */
-    /* height: 100vh; */
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8fafc;
@@ -19,8 +18,6 @@ header {
     width: 100%;
     flex-direction: column;
     padding: 10px;
-    /* border: solid 2px black; */
-
     flex-grow: 0;
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -47,7 +44,6 @@ header {
 }
 
 .checkout {
-    /* flex-grow: 1; */
     position: relative;
     background: #3b82f6;
     color: white;
@@ -62,8 +58,10 @@ header {
 
 .checkout:hover {
     background: #2563eb;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Notis som visar antal artiklar i varukorgen */
 .cart-badge {
     position: absolute;
     top: -8px;
@@ -86,8 +84,16 @@ header {
     line-height: 1;
 }
 
+/* Behållare för kategoriknappar */
+#categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow: auto;
+}
+
+/* Individuella knappar för kategorifilter */
 .menuButton {
-    /* flex-grow: 1; */
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
@@ -98,33 +104,17 @@ header {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: #333;
-
-    /* width: 200px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3b82f6;
-    color: white; */
 }
 
 .menuButton:hover {
     background: #e2e8f0;
     transform: translateY(-2px);
-    /* background: #2563eb; */
-}
-
-#categories {
-    display: flex;
-    gap: 20px;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    overflow: auto;
-    /* border: solid; */
 }
 
 /* MAIN */
+
+/* Huvudbehållare för sidans innehåll */
 main {
-    /* border: solid 2px black; */
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -133,30 +123,17 @@ main {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-
-    /* max-width: 1400px; */
-    /* background-color: red; */
-    /* height: 100%; */
 }
 
-/* Vi behöver en titel i main för de olika kategorierna */
-/* main h2 {
-                text-align: center;
-                font-size: 2.5rem;
-                margin-bottom: 40px;
-                color: #1e293b;
-            } */
-
+/* Responsiv nätlayout (grid) för produkter */
 .productGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
 }
 
+/* Behållare för individuella produktkort */
 .product {
-    /* display: flex;
-    flex-direction: column; */
-    /* centrerar text i diven */
     text-align: center;
     background: white;
     border-radius: 16px;
@@ -164,26 +141,13 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
 .product img {
     width: 100%;
-
-    /* hard coded not so good? */
     min-width: 283px;
     height: 300px;
-    /* overflow: hidden; */
     /* zommar in bilderna om de är för stora  */
     object-fit: cover;
 }
-
-/* .product img {
-    height: 300px;
-    width: 100%;
-} */
 
 /* .product h4  */
 .product-name {
@@ -198,13 +162,12 @@ main {
     padding: 0 20px 10px;
     font-weight: bold;
     color: #3b82f6;
-    /* font-size: 1.3rem; */
     padding-left: min(3em, 6%);
     padding-right: min(3em, 6%);
     font-size: 1.3rem;
 }
 
-/* product-description */
+/* Produktbeskrivning */
 .product p {
     padding: 0 20px 10px;
     color: #475569;
@@ -213,13 +176,12 @@ main {
 }
 
 /* main h2 */
-/* läs mer knapp */
+/* "Läs mer"-knapp på produktkort */
 .modal-product {
     margin-top: 2%;
     margin-bottom: 2%;
     color: #1e293b;
     padding: 10px 20px;
-    /* background: #f1f5f9; */
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
@@ -230,67 +192,14 @@ main {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.modal-product:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background: #2563eb;
+}
+
 /* MODAL */
 
-/* .modal-image {
-    height: 250px;
-    width: 250px;
-    margin-bottom: 10px;
-    border: 2px solid red;
-}   
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    background-color: #fefefe;
-    border: 5px solid grey;
-    margin: 15% auto;
-    padding: 20px;
-    height: 40%;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
-/* ==== Checkout Modal (refined) ==== */
-
-.remove {
-    background: none;
-    border-radius: 5px;
-}
-
-.remove:hover {
-    color: red;
-    border-color: red;
-}
-
+/* Bakgrundslager för modal (overlay) */
 .modal {
     display: none;
     position: fixed;
@@ -300,6 +209,7 @@ main {
     backdrop-filter: blur(2px);
 }
 
+/* Animation för modalens entré */
 @keyframes modal-in {
     from {
         opacity: 0;
@@ -311,6 +221,7 @@ main {
     }
 }
 
+/* Innehållsbehållare för modal */
 .modal-content {
     position: relative;
     display: flex;
@@ -328,6 +239,7 @@ main {
     overflow: auto;
 }
 
+/* Stäng-knapp (X) i modalen */
 .close {
     position: absolute;
     top: 12px;
@@ -342,12 +254,15 @@ main {
     transition: all 0.2s ease;
 }
 
+/* Hover-läge för stäng-knappen */
 .close:hover,
 .close:focus {
     color: #0f172a;
     background: #e2e8f0;
+    cursor: pointer;
 }
 
+/* Produktbilder inuti modaler */
 .modal-image {
     width: 180px;
     height: 180px;
@@ -358,6 +273,7 @@ main {
 }
 
 /* Cart modal specific tags */
+/* Titel i varukorgsmodalen */
 .korg-title {
     margin: 0;
     font-size: 1.4rem;
@@ -365,6 +281,7 @@ main {
     color: #0f172a;
 }
 
+/* Behållare för listan med varukorgsartiklar */
 .korg-list {
     list-style: none;
     margin: 0;
@@ -374,6 +291,7 @@ main {
     gap: 12px;
 }
 
+/* Rad för enskild artikel i varukorgen */
 .korg-item {
     display: flex;
     align-items: center;
@@ -389,15 +307,18 @@ main {
     background: #f1f5f9;
 }
 
+/* Produktbild för artikel i varukorgen */
 .korg-item .modal-image {
     flex-shrink: 0;
     width: clamp(60px, 12%, 80px);
-    height: clamp(60px, 12%, 80px);
+    /* height: clamp(60px, 12%, 80px); */
     object-fit: cover;
+    height: 60px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Produktnamn för artikel i varukorgen */
 .korg-item h3 {
     margin: 0;
     flex: 1;
@@ -407,6 +328,7 @@ main {
     line-height: 1.4;
 }
 
+/* Behållare för produktinformation (pris) */
 .product-info {
     flex-shrink: 0;
     font-size: 0.95rem;
@@ -419,11 +341,25 @@ main {
     padding: 0;
 }
 
+/* Prismarkering i varukorgen */
 .product-info span:first-child {
     font-weight: 700;
     color: #16a34a;
 }
 
+/* Knapp för att ta bort artikel (X) i varukorgen */
+.remove {
+    background: none;
+    border-radius: 5px;
+}
+
+.remove:hover {
+    color: red;
+    border-color: red;
+    cursor: pointer;
+}
+
+/* "Lägg till i varukorg"-knapp i produktmodalen */
 .btnCart {
     appearance: none;
     border: none;
@@ -436,6 +372,7 @@ main {
     letter-spacing: 0.2px;
     box-shadow: 0 8px 16px rgba(34, 197, 94, 0.25);
     transition: transform 0.06s ease, box-shadow 0.2s ease, background 0.2s ease;
+    cursor: pointer;
 }
 
 .btnCart:hover {
@@ -443,10 +380,23 @@ main {
     box-shadow: 0 10px 18px rgba(22, 163, 74, 0.28);
 }
 
+/* Nedtryckt läge */
 .btnCart:active {
     transform: translateY(1px);
 }
 
+/* FOOTER */
+footer {
+    border: solid 2px black;
+    flex-grow: 0;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+}
+
+/* Mobiljusteringar för modaler */
 @media (max-width: 640px) {
     .modal-content {
         text-align: left;
@@ -456,16 +406,4 @@ main {
         width: 100%;
         height: 200px;
     }
-}
-
-/* FOOTER */
-footer {
-    border: solid 2px black;
-    flex-grow: 0;
-    /* text-align: center; */
-    background: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: auto;
 }
